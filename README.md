@@ -3,7 +3,12 @@ A repository to track my JavaScript learning journey.
 
 ## Progress Log
 - **Day 1 (May 30)**:
-  - Read: freeCodeCamp “JavaScript Basics” (up to “Use Conditional Logic with If Statements”) + ES6 scoping + async/await theory (1 hour).
-  - Coding: Practiced ES6 features and wrote custom Promise/async/await functions (walkAnimal with chaining, await, parallel execution, and error handling) (45 min).
-  - Certification: Completed challenges up to “Compare Scopes of the var and let Keywords” in ES6 (~20–25 challenges total) (1.5 hours).
+  - Read: freeCodeCamp “JavaScript Basics” (up to all 118 challenges) + ES6 scoping + async/await theory (1 hour).
+  - Coding: Practiced ES6 features and wrote custom Promise/async/await functions (performTask with chaining, await, parallel execution, and error handling) (1 hour).
+  - Certification: Completed all 118 “Basic JavaScript” challenges (1.5 hours).
   - **Files**: `es6_practice.js`
+- **Day 2 (May 31)**:
+  - Read: MDN “JavaScript Modules” (1 hour).
+  - Coding: Built a module-based calculator (1 hour).
+  - Certification: Completed [e.g., “Use Arrow Functions to Write Concise Anonymous Functions” or all “ES6” challenges] (~5–10 challenges) (1 hour).
+  - **Files**: `module-calculator/mathOperations.js`, `module-calculator/calculator.js`
