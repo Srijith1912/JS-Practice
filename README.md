@@ -12,3 +12,4 @@ A repository to track my JavaScript learning journey.
   - Coding: Built a module-based calculator (1 hour).
   - Certification: Completed [e.g., “Use Arrow Functions to Write Concise Anonymous Functions” or all “ES6” challenges] (~5–10 challenges) (1 hour).
   - **Files**: `module-calculator/mathOperations.js`, `module-calculator/calculator.js`
+- **Day 3 (June 31)**:
