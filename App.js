@@ -6,18 +6,21 @@ function App() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
+
+      document.title = `Count: ${count}`;
       console.log("Count updated to: ", count)
-    }, [count])
+
+      return () => {console.log("Cleanup - Count was ", count);};
+
+    }, [count]);
 
   return (
+
     <div className="App">
-
-      <header>Count: {count}</header>
-      <br></br>
-      <button onClick={() => setCount(count+1)}><strong>Increment</strong></button>
-      <br></br>
-      <button onClick={() => setCount(count-1)}><strong>Decrement</strong></button>
-
+      <header className="App-header">Count: {count}
+        <button onClick={() => setCount(count+1)}><strong>Increment</strong></button>
+        <button onClick={() => setCount(count-1)}><strong>Decrement</strong></button>
+        </header>
     </div>
   );
 }
