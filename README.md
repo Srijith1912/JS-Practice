@@ -11,10 +11,9 @@ A repository to track my JavaScript learning journey.
   - Read: MDN “JavaScript Modules” (1 hour).
   - Coding: Built a module-based calculator (1 hour).
   - Certification: Completed [e.g., “Use Arrow Functions to Write Concise Anonymous Functions” or all “ES6” challenges] (~5–10 challenges) (1 hour).
-  - **Files**: `module-calculator/mathOperations.js`, `module-calculator/calculator.js`
+  - **Files**: `module-calculator/operations.js`, `module-calculator/calculator.js`
 - **Day 3 (June 1)**:
-  - Read: React Docs “Getting Started” (30 min).
-  - Coding: Started a counter app with useState (45 min).
-  - Certification: [Pending]
+  - Read: React Docs “Getting Started” (30 min) + Hooks (1 hour).
+  - Coding: Completed counter app with useState and useEffect (1.5 hours).
+  - Certification: Completed [e.g., 5–10 challenges in ES6 or Functional Programming] (1 hour).
   - **Files**: `App.js`
-  
