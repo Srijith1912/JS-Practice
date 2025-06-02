@@ -13,4 +13,8 @@ A repository to track my JavaScript learning journey.
   - Certification: Completed [e.g., “Use Arrow Functions to Write Concise Anonymous Functions” or all “ES6” challenges] (~5–10 challenges) (1 hour).
   - **Files**: `module-calculator/mathOperations.js`, `module-calculator/calculator.js`
 - **Day 3 (June 1)**:
+  - Read: React Docs “Getting Started” (30 min).
+  - Coding: Started a counter app with useState (45 min).
+  - Certification: [Pending]
+  - **Files**: `App.js`
   
