@@ -25,14 +25,12 @@ A repository to track my JavaScript learning journey.
   - Coding: Started TaskManager project with basic task list and add functionality using React `useState`.
   - Styled the initial UI with basic CSS.
   - Certification: Completed 5 Functional Programming challenges (e.g., “Use the map Method to Extract Data from an Array”) (1 hour).
-  - **Files**: `task-manager/App.js`, `task-manager/App.css`
   - **Repo**: TaskManager project is in a separate repo: [TaskManager](https://github.com/your-username/TaskManager)
 
 - **Day 5 (June 3)**:
   - Coding: Added theme toggle to TaskManager using `useContext` for light/dark themes.
   - Set up `ThemeProvider` in TaskManager for global theme state.
   - Certification: Completed 5 Functional Programming challenges (e.g., “Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem”) (1 hour).
-  - **Files**: `task-manager/App.js`, `task-manager/ThemeContext.js`, `task-manager/index.js`
   - **Repo**: TaskManager project is in a separate repo: [TaskManager](https://github.com/your-username/TaskManager)
 
 - **Day 6 (June 4)**:
@@ -40,7 +38,6 @@ A repository to track my JavaScript learning journey.
   - Fixed Tailwind setup issues in TaskManager (e.g., corrected `index.css` directives, `tailwind.config.js` content path).
   - Centralized theme styles in TaskManager using `themeStyles`.
   - Certification: Completed 5 Intermediate Algorithm Scripting challenges (e.g., “Sum All Numbers in a Range”) (1 hour).
-  - **Files**: `task-manager/App.js`, `task-manager/index.css`, `task-manager/tailwind.config.js`, `task-manager/ThemeContext.js`
   - **Repo**: TaskManager project is in a separate repo: [TaskManager](https://github.com/your-username/TaskManager)
 
 - **Catch-Up Day (June 5)**:
@@ -48,7 +45,6 @@ A repository to track my JavaScript learning journey.
   - Debugged Tailwind issues in TaskManager and addressed npm vulnerabilities.
   - Updated TaskManager GitHub repo with README.
   - Certification: Completed 5 Intermediate Algorithm Scripting challenges (e.g., “Diff Two Arrays”) (30 minutes).
-  - **Files**: `task-manager/App.js`, `task-manager/ThemeContext.js`, `task-manager/index.css`, `task-manager/tailwind.config.js`, `task-manager/README.md`
   - **Repo**: TaskManager project is in a separate repo: [TaskManager](https://github.com/your-username/TaskManager)
 
 ## Mini Projects
