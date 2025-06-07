@@ -80,7 +80,7 @@ Below are the small projects I’ve completed during my learning journey, organi
   - Skills: DOM manipulation, event handling, vanilla JavaScript.
   - **Files**: `mini-todo-list/index.html`, `mini-todo-list/script.js`, `mini-todo-list/styles.css`
 
-- **Mini Project 4: Express Server (June 7)**:
-  - Description: A basic Express server setup to handle HTTP requests, serving a “Hello, Express!” message and an optional “About Page.”
-  - Skills: Node.js, Express framework, server-side JavaScript, HTTP routing.
-  - **Files**: `express-server/server.js`, `express-server/package.json`
+- **Mini Project 4: Express Routing (June 7)**:
+  - Description: Implemented RESTful routes for a tasks API, including GET, POST, PUT, and DELETE operations with JSON support.
+  - Skills: Express routing, RESTful API design, middleware (`express.json()`), HTTP methods.
+  - **Files**: `express-server/server.js` `express-server/package.json`
