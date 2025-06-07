@@ -3,6 +3,8 @@ A repository to track my JavaScript learning journey.
 
 ## Progress Log
 
+## Week 1
+
 - **Day 1 (May 30)**:
   - Read: freeCodeCamp “JavaScript Basics” (up to all 118 challenges) + ES6 scoping + async/await theory (1 hour).
   - Coding: Practiced ES6 features and wrote custom Promise/async/await functions (performTask with chaining, await, parallel execution, and error handling) (1 hour).
@@ -47,6 +49,13 @@ A repository to track my JavaScript learning journey.
   - Certification: Completed 5 Intermediate Algorithm Scripting challenges (e.g., “Diff Two Arrays”) (30 minutes).
   - **Repo**: TaskManager project is in a separate repo: [TaskManager](https://github.com/Srijith1912/TaskManager)
 
+## Week 2
+
+- **Day 1 (June 6)**:
+  - Read: Node.js Docs “Introduction” + Event Loop (1 hour).
+  - Coding: Set up Express server (1 hour).
+  - GitHub: Updated `JS-Practice` repo with Express server.
+
 ## Mini Projects
 
 Below are the small projects I’ve completed during my learning journey, organized by date.
@@ -65,3 +74,8 @@ Below are the small projects I’ve completed during my learning journey, organi
   - Description: A simple todo list app using vanilla JavaScript, allowing users to add and delete tasks with basic CSS styling.
   - Skills: DOM manipulation, event handling, vanilla JavaScript.
   - **Files**: `mini-todo-list/index.html`, `mini-todo-list/script.js`, `mini-todo-list/styles.css`
+
+- **Mini Project 4: Express Server (June 7)**:
+  - Description: A basic Express server setup to handle HTTP requests, serving a “Hello, Express!” message and an optional “About Page.”
+  - Skills: Node.js, Express framework, server-side JavaScript, HTTP routing.
+  - **Files**: `express-server/server.js`, `express-server/package.json`
