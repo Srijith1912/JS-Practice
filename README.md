@@ -56,6 +56,11 @@ A repository to track my JavaScript learning journey.
   - Coding: Set up Express server (1 hour).
   - GitHub: Updated `JS-Practice` repo with Express server.
 
+- **Day 2 (June 7)**:
+  - Read: Express Docs “Routing” (1 hour).
+  - Coding: Build RESTful routes for tasks API (1 hour).
+  - GitHub: Updating `JS-Practice` repo with routing progress.
+
 ## Mini Projects
 
 Below are the small projects I’ve completed during my learning journey, organized by date.
