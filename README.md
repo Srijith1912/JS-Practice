@@ -85,7 +85,7 @@ Below are the small projects I’ve completed during my learning journey, organi
   - Skills: DOM manipulation, event handling, vanilla JavaScript.
   - **Files**: `mini-todo-list/index.html`, `mini-todo-list/script.js`, `mini-todo-list/styles.css`
 
-- **Mini Project 4: Express Routing (June 7)**:
-  - Description: Implemented RESTful routes for a tasks API, including GET, POST, PUT, and DELETE operations with JSON support.
-  - Skills: Express routing, RESTful API design, middleware (`express.json()`), HTTP methods.
+- **Mini Project 4: Express Routing (June 7) with MongoDB Integration (June 8)**:
+  - Description: Integrated MongoDB Atlas with the Express API, implementing CRUD operations for the tasks resource.
+  - Skills: MongoDB, MongoDB Atlas, Node.js Driver, Express routing, RESTful API design, HTTP Methods.
   - **Files**: `express-server/server.js` `express-server/package.json`
