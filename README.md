@@ -60,6 +60,11 @@ A repository to track my JavaScript learning journey.
   - Read: Express Docs “Routing” (1 hour).
   - Coding: Build RESTful routes for tasks API (1 hour).
   - GitHub: Updating `JS-Practice` repo with routing progress.
+ 
+- **Day 3 (June 8)**:
+  - Read: MongoDB Docs “Getting Started” (1 hour).
+  - Coding: Implement CRUD with MongoDB Atlas (1.5 hours).
+  - GitHub: Updating `JS-Practice` repo with MongoDB integration.
 
 ## Mini Projects
 
