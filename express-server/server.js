@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const uri = 'mongodb+srv://mulupurisrijith:UYrNZlautfTcZ28J@cluster0.pcisnry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = 'mongodb+srv://mulupurisrijith:<password>@cluster0.pcisnry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const client = new MongoClient(uri);
 
 async function run() {
