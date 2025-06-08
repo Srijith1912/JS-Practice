@@ -1,72 +1,82 @@
 const express = require('express');
+const { MongoClient } = require('mongodb');
 const app = express();
+
 app.use(express.json());
 
+const uri = 'mongodb+srv://mulupurisrijith:UYrNZlautfTcZ28J@cluster0.pcisnry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const client = new MongoClient(uri);
 
-// Initializing Tasks array
-let tasks = [{
-  id : 1,
-  title: 'Task 1',
-  completed: false
-}];
+async function run() {
+  try {
 
-// To display all Tasks when sent GET req to /tasks
-app.get('/tasks', (req, res) => {
-  res.json(tasks);
-});
+    await client.connect();
+    console.log('Connected to MongoDB Atlas');
+    const db = client.db('taskDB');
+    const collection = db.collection('tasks');
 
-// To display unique Task by its id
-app.get('/tasks/:id', (req, res) => {
+    // GET all tasks
+    app.get('/tasks', async (req, res) => {
 
-  const id = parseInt(req.params.id);
-  const task = tasks.find(t => t.id === id);
-  if (task) res.json(task);
-  else res.status(404).send("Task not found.");
+      const tasks = await collection.find().toArray();
+      res.json(tasks);
 
-});
+    });
 
-// To add a new task to the Tasks array
-app.post('/tasks', (req, res) => {
+    // GET a specific task
+    app.get('/tasks/:id', async (req, res) => {
 
-  const {title, completed} = req.body;
-  if (!title) return res.status(400).send('Title is required');
+      const task = await collection.findOne({ id: parseInt(req.params.id) });
 
-  const newTask = {
-    id : tasks.length > 0 ? Math.max(...tasks.map(t => t.id)) + 1 : 1, title,
-    completed: completed || false
-  };
+      if (task) res.json(task);
+      else res.status(404).send('Task not found');
 
-  tasks.push(newTask);
-  res.status(201).json(newTask);
+    });
 
-});
+    // POST a new task
+    app.post('/tasks', async (req, res) => {
 
-// To update values of an existing task
-app.put('/tasks/:id', (req, res) => {
+      const { title, completed } = req.body;
+      if (!title) return res.status(400).send('Title is required');
 
-  const id = parseInt(req.params.id);
-  const task = tasks.find(t => t.id === id);
-  if (!task) return res.status(404).send("Task not found.");
+      const newTask = { id: (await collection.countDocuments()) + 1, title, completed: completed || false };
+      await collection.insertOne(newTask);
+      res.status(201).json(newTask);
+    });
 
-  const {title, completed} = req.body;
-  if (title) task.title = title;
-  if (completed !== undefined) task.completed = completed;
-  res.json(task);
+    // PUT (update) a task
+    app.put('/tasks/:id', async (req, res) => {
 
-});
+      const id = parseInt(req.params.id);
+      const { title, completed } = req.body;
 
-// Delete an existing task
-app.delete('/tasks/:id', (req, res) => {
-  const id = parseInt(req.params.id);
-  const index = tasks.findIndex(t => t.id === id);
-  if (index === -1) return res.status(404).send("Task not found");
+      const updateDoc = {};
+      if (title) updateDoc.title = title;
+      if (completed !== undefined) updateDoc.completed = completed;
 
-  tasks.splice(index, 1);
-  res.status(204).send();
-});
+      const result = await collection.updateOne({ id }, { $set: updateDoc });
 
-//Starts server on port 3001
-app.listen(3001, () => {
-  console.log("Server running on port 3001")
-});
+      if (result.matchedCount === 0) return res.status(404).send('Task not found');
+      const updatedTask = await collection.findOne({ id });
+      res.json(updatedTask);
+    });
 
+    // DELETE a task
+    app.delete('/tasks/:id', async (req, res) => {
+
+      const result = await collection.deleteOne({ id: parseInt(req.params.id) });
+      if (result.deletedCount === 0) return res.status(404).send('Task not found');
+      res.status(204).send();
+
+    });
+
+    app.listen(3001, () => {
+      console.log('Server running on port 3001');
+    });
+    
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+run().catch(console.dir);
