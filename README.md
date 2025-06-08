@@ -1,5 +1,5 @@
 # JS-Practice
-A repository to track my JavaScript learning journey.
+This repository contains my JavaScript learning journey, where I explore various concepts and build small projects to reinforce my skills. Below are the tasks and projects completed, organized by date.
 
 ## Progress Log
 
