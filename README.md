@@ -65,15 +65,12 @@ This repository contains my JavaScript learning journey, where I explore various
   - Read: MongoDB Docs “Getting Started” (1 hour).
   - Coding: Implement CRUD with MongoDB Atlas (1.5 hours).
   - GitHub: Updating `JS-Practice` repo with MongoDB integration.
- 
+
 - **Day 4 (June 9)**:
-  -
-  -
-  -
-
-- **Day 5 (June 10)**:
-  - 
-
+  - **Read**: freeCodeCamp “Full-Stack Tutorial” (React-Express integration) (1 hour).
+  - **Coding**: Implemented Axios in Task Manager’s React front-end for GET/POST requests to fetch and add tasks (1 hour).
+  - **Debugging**: Investigated Task Manager backend issues, checked CORS setup, and tested API endpoints with Postman.
+  - **GitHub**: Updated `TaskManager` repo with Axios integration and server logs.
 
 ## Mini Projects
 
