@@ -66,10 +66,13 @@ This repository contains my JavaScript learning journey, where I explore various
   - Coding: Implement CRUD with MongoDB Atlas (1.5 hours).
   - GitHub: Updating `JS-Practice` repo with MongoDB integration.
  
--  **Day 4 (June 9)**:
+- **Day 4 (June 9)**:
   -
   -
   -
+
+- **Day 5 (June 10)**:
+  - 
 
 
 ## Mini Projects
