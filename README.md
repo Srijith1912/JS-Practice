@@ -71,6 +71,13 @@ This repository contains my JavaScript learning journey, where I explore various
   - **Coding**: Implemented Axios in Task Manager’s React front-end for GET/POST requests to fetch and add tasks (1 hour).
   - **Debugging**: Investigated Task Manager backend issues, checked CORS setup, and tested API endpoints with Postman.
   - **GitHub**: Updated `TaskManager` repo with Axios integration and server logs.
+ 
+- **Day 5 (June 10)**:
+  - **Coding**: Built Weather API Web App using React and Axios, fetching current weather data from OpenWeatherMap API with error handling for invalid cities (2.5 hours).
+  - **Certification**: Completed freeCodeCamp JavaScript Certification (1.5 hours).
+  - **Progress**: Started June 11 tasks by reviewing Node.js performance concepts (event loop, async operations) for Task Manager optimization (30 minutes).
+  - **GitHub**: Created `WeatherApp` repo with README and pushed initial code: [WeatherApp](https://github.com/Srijith1912/WeatherApp)
+
 
 ## Mini Projects
 
