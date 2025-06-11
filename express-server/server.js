@@ -1,10 +1,23 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
+const cors = require('cors');
+const rateLimit = require('express-rate-limit');
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
-const uri = 'mongodb+srv://mulupurisrijith:<password>@cluster0.pcisnry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: "Too many requests from this IP, please try again later.",
+  standardHeaders: true,
+  legacyHeaders: false,
+
+});
+app.use(limiter);
+
+const uri = 'mongodb+srv://mulupurisrijith:UYrNZlautfTcZ28J@cluster0.pcisnry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const client = new MongoClient(uri);
 
 async function run() {
