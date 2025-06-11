@@ -77,6 +77,11 @@ This repository contains my JavaScript learning journey, where I explore various
   - **Certification**: Completed freeCodeCamp JavaScript Certification (1.5 hours).
   - **Progress**: Started June 11 tasks by reviewing Node.js performance concepts (event loop, async operations) for Task Manager optimization (30 minutes).
   - **GitHub**: Created `WeatherApp` repo with README and pushed initial code: [WeatherApp](https://github.com/Srijith1912/WeatherApp)
+ 
+- **Day 6 (June 11)**:
+  - **Read**: Reviewed Node.js performance (event loop, async operations) (30 minutes).
+  - **Coding**: Added rate limiting to Task Manager API using `express-rate-limit` (100 requests per 15 minutes) (1 hour).
+  - **GitHub**: Updated `express-server/server.js` repo with rate limiting code.
 
 
 ## Mini Projects
