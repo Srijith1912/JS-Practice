@@ -83,6 +83,19 @@ This repository contains my JavaScript learning journey, where I explore various
   - **Coding**: Added rate limiting to Task Manager API using `express-rate-limit` (100 requests per 15 minutes) (1 hour).
   - **GitHub**: Updated `express-server/server.js` repo with rate limiting code.
 
+## Week 3
+
+- **Day 1 (June 13)**:
+  - **Read**: freeCodeCamp “JWT Authentication” (1 hour).
+  - **Coding**: Added JWT authentication to TaskManager with `/register`, `/login`, and protected `/tasks` routes using `jsonwebtoken` and `bcryptjs` (1.5 hours).
+  - **GitHub**: Updated `TaskManager` repo with JWT implementation.
+  - **Repo**: [TaskManager](https://github.com/Srijith1912/TaskManager)
+
+- **Day 2 (June 14)**:
+  - **Read**: freeCodeCamp “Testing Node.js Apps” (1 hour).
+  - **Coding**: Wrote Jest tests for TaskManager’s `/tasks` API routes using Supertest and MongoDB Memory Server (1 hour).
+  - **GitHub**: Updated `TaskManager` repo with tests.
+  - **Repo**: [TaskManager](https://github.com/Srijith1912/TaskManager)
 
 ## Mini Projects
 
@@ -107,3 +120,13 @@ Below are the small projects I’ve completed during my learning journey, organi
   - Description: Integrated MongoDB Atlas with the Express API, implementing CRUD operations for the tasks resource.
   - Skills: MongoDB, MongoDB Atlas, Node.js Driver, Express routing, RESTful API design, HTTP Methods.
   - **Files**: `express-server/server.js` `express-server/package.json`
+ 
+- **Mini Project 5: Grocery Store App (June 11–12, 2025)**:
+  - **Description**: A full-stack MERN application for small grocery shops to manage inventory, track stock, and allow customer checkouts.
+  - **Features**:
+    - User authentication for shop owners and customers.
+    - Inventory management with stock tracking.
+    - Simple checkout interface for customers.
+  - **Skills**: MERN stack (MongoDB, Express.js, React, Node.js), JWT authentication, Axios, Tailwind CSS.
+  - **Challenges**: Implemented user roles (owners vs. customers) and secured inventory routes.
+  - **Repo**: [Project-Inventory](https://github.com/Srijith1912/Project-Inventory)
